@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Cadastro</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .cadastro {
+            background-color: #222;
+            padding: 30px;
+            border-radius: 10px;
+            width: 320px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .cadastro h1 {
+            margin-bottom: 20px;
+        }
+
+        .cadastro input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .cadastro button {
+            width: 95%;
+            padding: 12px;
+            background-color: red;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cadastro button:hover {
+            background-color: darkred;
+        }
+
+        .voltar {
+            display: block;
+            margin-top: 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .voltar:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cadastro">
+        <h1>📋 Cadastro</h1>
+
+        <form>
+            <input type="text" placeholder="Nome" required>
+
+            <input type="email" placeholder="E-mail" required>
+
+            <input type="password" placeholder="Senha" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <a class="voltar" href="index.html">
+            ← Voltar ao catálogo
+        </a>
+    </div>
+
+</body>
+
+</html>
